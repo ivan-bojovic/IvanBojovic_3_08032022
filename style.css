@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+/*header*/
+.logo h1 {
+    font-family: 'Shrikhand', cursive;
+    text-align: center;
+}
