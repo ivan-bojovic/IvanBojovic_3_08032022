@@ -1,0 +1,19 @@
+{
+  "name": "p3_bojovic_ivan",
+  "version": "1.0.0",
+  "description": "Mon projet OpenClassrooms 3 ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch style.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivan-bojovic/IvanBojovic_3_08032022.git"
+  },
+  "author": "Ivan Bojovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivan-bojovic/IvanBojovic_3_08032022/issues"
+  },
+  "homepage": "https://github.com/ivan-bojovic/IvanBojovic_3_08032022#readme"
+}
