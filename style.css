@@ -156,6 +156,7 @@ body {
   text-decoration: none;
   color: inherit;
   position: relative;
+  transition: all 0.2s;
   box-shadow: 1px 1px 3px 0 rgba(68, 67, 67, 0.64);
 }
 @media screen and (max-width: 767px) {
@@ -165,7 +166,6 @@ body {
 }
 .menus_cards-card:hover {
   opacity: 0.9;
-  transition: 0.2s;
   box-shadow: 2px 1px 8px -2px #000000;
 }
 
@@ -205,6 +205,17 @@ body {
   right: 15px;
   top: 50%;
   transform: translateY(-50%);
+}
+.menus_cards-description .fas {
+  color: transparent;
+  background-image: linear-gradient(0deg, rgba(136, 59, 230, 0.9), rgba(236, 129, 206, 0.9));
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+.menus_cards-description .fas:hover {
+  opacity: 1;
 }
 
 /*footer*/
