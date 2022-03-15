@@ -243,4 +243,85 @@ body {
   padding-bottom: 10px;
 }
 
+/*page palettes du gout*/
+/* header*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.header_lien {
+  text-decoration: none;
+  color: inherit;
+  position: absolute;
+  left: 25px;
+}
+.header_lien-icone {
+  font-weight: bold;
+  font-size: 18px;
+}
+.header_logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 30px;
+  margin: 25px 0 20px 0;
+}
+
+/*main*/
+.main_image {
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.main_titres {
+  position: relative;
+  margin-top: -15px;
+  padding: 0 5%;
+}
+@media screen and (max-width: 767px) {
+  .main_titres {
+    margin-top: -50px;
+    padding: 0%;
+  }
+}
+
+.main_titres-titre {
+  font-family: "Shrikhand", cursive;
+  font-weight: 500;
+  margin: 0%;
+  padding: 30px 0 30px 4%;
+  background-color: #f5f5f5;
+  border-radius: 30px 30px 0 0;
+}
+.main_titres i {
+  font-size: 25px;
+  position: absolute;
+  right: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 767px) {
+  .main_titres i {
+    right: 40px;
+  }
+}
+.main_titres .fas {
+  color: transparent;
+  background-image: linear-gradient(170deg, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+.main_titres .fas:hover {
+  opacity: 1;
+}
+
+/*menu*/
+.section_menu {
+  border: 1px solid blue;
+  background-color: #f5f5f5;
+}
+
 /*# sourceMappingURL=style.css.map */
