@@ -431,6 +431,30 @@ body {
         }
     }
 }
+/*explorer bouton*/
+.explorer {
+    background-color: $gris;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 50px;
+    &_bouton {
+        text-decoration: none;
+        border: none;
+        color: white;
+        padding: 15px 75px;
+        @include background-image;
+        border-radius: 25px;
+        @include shadow-base;
+        @media screen and (max-width: $breakpoint) {
+            padding: 15px 35px;
+        }
+        &:hover {
+            opacity: 0.85;
+            transition: 0.15s;
+            @include shadow-hover;
+        } 
+    }
+}
 
 
 
