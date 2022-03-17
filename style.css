@@ -7,6 +7,62 @@ body {
   margin: 0;
 }
 
+/*spinner*/
+.spinner {
+  height: 100%;
+  width: 100%;
+  background: #f5f5f5;
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  animation: spinner 2s both;
+  animation-delay: 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes spinner {
+  0% {
+    opacity: 0.9;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.spinner_elements {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.spinner_elements span {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid #99E2D0;
+  background-color: #f5f5f5;
+  animation: loader 1s linear;
+  animation-iteration-count: 1;
+}
+.spinner_elements span:nth-child(2) {
+  border: 2px solid #FF79DA;
+  background-color: #f5f5f5;
+  animation-delay: 0.4s;
+}
+.spinner_elements span:nth-child(3) {
+  border: 2px solid #9356DC;
+  background-color: #f5f5f5;
+  animation-delay: 0.8s;
+}
+
+@keyframes loader {
+  50% {
+    opacity: 0.3;
+    transform: scale(0.6) translate(10px);
+  }
+}
 /*header*/
 .logo {
   padding: 20px 0 10px 0;
