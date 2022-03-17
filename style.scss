@@ -13,6 +13,19 @@ $gris:  #f5f5f5;
 }
 @mixin transition {
     transition: all 0.3s ease-in-out 0.2s;
+}
+@mixin explorer-bouton {
+    text-decoration: none;
+        border: none;
+        color: white;
+        @include background-image;
+        border-radius: 25px;
+        @include shadow-base;
+        &:hover {
+            opacity: 0.85;
+            transition: 0.15s;
+            @include shadow-hover;
+        }
 } 
     
 * {
@@ -62,18 +75,8 @@ body {
         margin-bottom: 40px;
     }
     &-bouton {
-        text-decoration: none;
-        border: none;
-        color: white;
         padding: 15px;
-        @include background-image;
-        border-radius: 25px;
-        @include shadow-base;
-        &:hover {
-            opacity: 0.85;
-            transition: 0.15s;
-            @include shadow-hover;
-        }
+        @include explorer-bouton;
     }
 }
 /*fonctionnement*/
@@ -362,9 +365,29 @@ body {
         }
     }
 }
+.section_menu {
+    @for $i from 1 through 9 {
+        .temp-#{$i} {
+            animation-delay: calc( 1170ms / 9) *$i;
+        }
+    }
+}
+
+@keyframes progressiv {
+    0% {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
 
 .section_menu {
     &-info {
+        animation: progressiv 1170ms linear 100ms;
+        animation-fill-mode: both;
         height: 70px;
         background-color: white;
         margin: 0 35px 10px 35px;
@@ -438,21 +461,11 @@ body {
     padding: 20px 0;
     margin-bottom: 50px;
     &_bouton {
-        text-decoration: none;
-        border: none;
-        color: white;
         padding: 15px 75px;
-        @include background-image;
-        border-radius: 25px;
-        @include shadow-base;
+        @include explorer-bouton;
         @media screen and (max-width: $breakpoint) {
             padding: 15px 35px;
         }
-        &:hover {
-            opacity: 0.85;
-            transition: 0.15s;
-            @include shadow-hover;
-        } 
     }
 }
 

@@ -51,10 +51,10 @@ body {
   margin-bottom: 40px;
 }
 .info_explorer-bouton {
+  padding: 15px;
   text-decoration: none;
   border: none;
   color: white;
-  padding: 15px;
   background-image: linear-gradient(170deg, #ff79da, #9356dc);
   border-radius: 25px;
   box-shadow: 1px 1px 3px 0 rgba(68, 67, 67, 0.64);
@@ -364,7 +364,47 @@ body {
   }
 }
 
+.section_menu .temp-1 {
+  animation-delay: 130ms;
+}
+.section_menu .temp-2 {
+  animation-delay: 260ms;
+}
+.section_menu .temp-3 {
+  animation-delay: 390ms;
+}
+.section_menu .temp-4 {
+  animation-delay: 520ms;
+}
+.section_menu .temp-5 {
+  animation-delay: 650ms;
+}
+.section_menu .temp-6 {
+  animation-delay: 780ms;
+}
+.section_menu .temp-7 {
+  animation-delay: 910ms;
+}
+.section_menu .temp-8 {
+  animation-delay: 1040ms;
+}
+.section_menu .temp-9 {
+  animation-delay: 1170ms;
+}
+
+@keyframes progressiv {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
 .section_menu-info {
+  animation: progressiv 1170ms linear 100ms;
+  animation-fill-mode: both;
   height: 70px;
   background-color: white;
   margin: 0 35px 10px 35px;
@@ -440,23 +480,23 @@ body {
   margin-bottom: 50px;
 }
 .explorer_bouton {
+  padding: 15px 75px;
   text-decoration: none;
   border: none;
   color: white;
-  padding: 15px 75px;
   background-image: linear-gradient(170deg, #ff79da, #9356dc);
   border-radius: 25px;
   box-shadow: 1px 1px 3px 0 rgba(68, 67, 67, 0.64);
-}
-@media screen and (max-width: 767px) {
-  .explorer_bouton {
-    padding: 15px 35px;
-  }
 }
 .explorer_bouton:hover {
   opacity: 0.85;
   transition: 0.15s;
   box-shadow: 2px 1px 8px -2px #000000;
+}
+@media screen and (max-width: 767px) {
+  .explorer_bouton {
+    padding: 15px 35px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
