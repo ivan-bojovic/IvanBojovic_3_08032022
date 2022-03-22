@@ -1,0 +1,14 @@
+/*explorer bouton*/
+.explorer {
+    background-color: $gris;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 50px;
+    &_bouton {
+        padding: 15px 75px;
+        @include explorer-bouton;
+        @media screen and (max-width: $breakpoint) {
+            padding: 15px 35px;
+        }
+    }
+}

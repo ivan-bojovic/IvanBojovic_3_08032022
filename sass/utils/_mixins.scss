@@ -1,0 +1,25 @@
+@mixin shadow-base {
+    box-shadow: 1px 1px 3px 0 rgba(68, 67, 67, 0.64);
+}
+@mixin shadow-hover {
+    box-shadow: 2px 1px 8px -2px #000000;
+}
+@mixin background-image {
+    background-image: linear-gradient(170deg,rgba(#FF79DA, 1),rgba(#9356DC, 1));
+}
+@mixin transition {
+    transition: all 0.3s ease-in-out 0.2s;
+}
+@mixin explorer-bouton {
+    text-decoration: none;
+        border: none;
+        color: white;
+        @include background-image;
+        border-radius: 25px;
+        @include shadow-base;
+        &:hover {
+            opacity: 0.85;
+            transition: 0.15s;
+            @include shadow-hover;
+        }
+}

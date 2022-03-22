@@ -1,0 +1,23 @@
+/*page palettes du gout, la note enchantee, À la française, Le délice des sens*/
+/* header*/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &_lien {
+        text-decoration: none;
+        color: inherit;
+        position: absolute;
+        left: 25px;
+        &-icone {
+            font-weight: bold;
+            font-size: 18px;
+        }
+    }
+    &_logo {
+        font-family: 'Shrikhand', cursive;
+        font-size: 30px;
+        margin: 25px 0 20px 0;  
+    }
+}

@@ -1,0 +1,28 @@
+/*location*/
+.info_location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #f2f3f3;
+    padding: 0 25px 0 0;
+    & p {
+        font-weight: 500;
+        font-size: 17px;
+    }
+}
+/*explorer*/
+.info_explorer {
+    text-align: center;
+    padding: 10px 30px 60px 30px;
+    background-color: #fafafa;
+    &-titre {
+        font-size: 30px;
+        @media screen and (max-width: $breakpoint) {
+            font-size: 24px;
+        }  
+    }
+    &-paragraphe {
+        margin-bottom: 40px;
+    }
+}

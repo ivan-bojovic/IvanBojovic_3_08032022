@@ -1,0 +1,7 @@
+/*bouton*/
+.info_explorer {
+    &-bouton {
+        padding: 15px;
+        @include explorer-bouton;
+    }
+}
